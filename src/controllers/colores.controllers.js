@@ -74,7 +74,7 @@ export const borrarColor = async(req, res)=>{
         await Color.findByIdAndDelete(req.params.id, req.body)
         //constestar con msj 200
         res.status(200).json({
-            mensaje: "El color fue modificado exitosamente"
+            mensaje: "El color fue eliminado exitosamente"
         })
     } catch (error) {
         console.error("🚀 ~ borrarColor ~ error:", error)
